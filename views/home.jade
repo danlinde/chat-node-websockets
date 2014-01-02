@@ -1,0 +1,17 @@
+doctype 5
+html
+	head
+		title Chat
+		script(src="http://code.jquery.com/jquery-2.0.3.min.js")
+		script(src="/socket.io/socket.io.js")
+		script(src="script.js")
+	body
+		.container
+			header
+				h1 A Chat application with Node.js and Socket.io
+			input(type='text')#pseudoInput
+			button#pseudoSet Set Pseudo
+			#chatEntries
+			#chatControls
+				input(type='text')#messageInput
+				button#submit Send
